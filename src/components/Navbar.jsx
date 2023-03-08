@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles.js";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { TypingText } from "../components";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -21,6 +22,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          {/* <TypingText title="| Saarthak Tuli" textStyles="text-center" /> */}
         </Link>
       </div>
     </nav>
