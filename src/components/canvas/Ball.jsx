@@ -1,16 +1,17 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
-  OrbitControls,
   Decal,
   Float,
+  OrbitControls,
   Preload,
   useTexture,
 } from "@react-three/drei";
+
 import Loader from "../Loader";
 
 const Ball = (props) => {
-  const [decal] = useTexture([props.imageUrl]);
+  const [decal] = useTexture([props.imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -24,7 +25,13 @@ const Ball = (props) => {
           polygonOffsetFactor={-5}
           flatShading
         />
-        <Decal position={[(0, 0, 1)]} map={decal} />
+        <Decal
+          position={[0, 0, 1]}
+          rotation={[2 * Math.PI, 0, 6.25]}
+          scale={1}
+          map={decal}
+          flatShading
+        />
       </mesh>
     </Float>
   );
@@ -32,10 +39,14 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="demand" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      frameloop="demand"
+      dpr={[1, 2]}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<Loader />}>
         <OrbitControls enableZoom={false} />
-        <Ball imageUrl={icon} />
+        <Ball imgUrl={icon} />
       </Suspense>
 
       <Preload all />
@@ -43,4 +54,4 @@ const BallCanvas = ({ icon }) => {
   );
 };
 
-export default Ball;
+export default BallCanvas;
