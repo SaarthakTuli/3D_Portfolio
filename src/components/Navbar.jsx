@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles.js";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import { TypingText } from "../components";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -27,7 +26,6 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer">
             Saarthak Tuli
           </p>
-          <TypingText title="| Saarthak Tuli" textStyles="text-center" />
         </Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
