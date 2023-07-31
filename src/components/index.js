@@ -13,6 +13,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import FullScreenButton from "./FullScreenButton";
 
 export {
   Hero,
@@ -28,4 +29,5 @@ export {
   ComputersCanvas,
   StarsCanvas,
   Footer,
+  FullScreenButton,
 };

@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
   Footer,
+  FullScreenButton,
 } from "./components";
 
 const App = () => {
@@ -26,7 +27,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
 
         <div className="relative z-0">
           <Contact />
@@ -34,6 +35,8 @@ const App = () => {
         </div>
 
         <Footer />
+
+        <FullScreenButton />
       </div>
     </BrowserRouter>
   );

@@ -11,7 +11,7 @@ const Navbar = () => {
       >
         <div className="w-[2px] h-[20px] bg-secondary" />
         <p className="text-white text-[18px] font-bold cursor-pointer flex">
-          Scroll to Top;
+          Scroll to Top
         </p>
       </div>
     </footer>
