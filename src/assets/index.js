@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-// import logo from "./logo.png";
+
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -7,7 +7,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import live from "./live.png"
+import live from "./live.png";
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -28,6 +28,7 @@ import ml from "./tech/ML.png";
 import mysql from "./tech/mysql.png";
 import python from "./tech/python.png";
 import swiftui from "./tech/swiftui.png";
+import nextjs from "./tech/nextjs.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -38,9 +39,9 @@ import buildnow from "./company/buildnow.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import shoppy from "./shoppy-io.jpg"
-import dashy from "./dashy.jpg"
-import metaverses from "./metaverses.jpg"
+import shoppy from "./shoppy-io.jpg";
+import dashy from "./dashy.jpg";
+import metaverses from "./metaverses.jpg";
 
 export {
   logo,
@@ -80,6 +81,7 @@ export {
   jobit,
   tripguide,
   shoppy,
-  dashy, 
-  metaverses
+  dashy,
+  metaverses,
+  nextjs,
 };

@@ -5,6 +5,7 @@ import {
   web,
   javascript,
   typescript,
+  nextjs,
   html,
   css,
   reactjs,
@@ -32,7 +33,7 @@ import {
   swiftui,
   shoppy,
   dashy,
-  metaverses
+  metaverses,
 } from "../assets";
 
 export const navLinks = [
@@ -60,7 +61,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Machine Learning",
     icon: backend,
   },
   {
@@ -83,8 +84,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "Next JS",
+    icon: nextjs,
   },
   {
     name: "Tailwind CSS",
@@ -110,7 +111,6 @@ const technologies = [
     name: "Java",
     icon: java,
   },
-  
   {
     name: "MySql",
     icon: mysql,
@@ -249,7 +249,7 @@ const projects = [
   {
     name: "Dashy",
     description:
-      "Web application that acts as a dashboard viewing to supercharge managers",
+      "A React Web application that acts as a dashboard viewing to supercharge managers",
     tags: [
       {
         name: "react",

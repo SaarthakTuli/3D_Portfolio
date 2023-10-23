@@ -20,10 +20,11 @@ const ServiceCard = ({ index, title, icon }) => {
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
-        </div>
-      </motion.div>
+            {" "}
+            {title}{" "}
+          </h3>{" "}
+        </div>{" "}
+      </motion.div>{" "}
     </Tilt>
   );
 };
@@ -32,29 +33,29 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-
+        <p className={styles.sectionSubText}> Introduction </p>{" "}
+        <h2 className={styles.sectionHeadText}> Overview. </h2>{" "}
+      </motion.div>{" "}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend
-        felis a leo efficitur, nec pretium elit lobortis. Pellentesque at mauris
-        purus. Praesent tincidunt est urna, posuere tristique est fringilla nec.
-        Morbi vitae quam viverra, malesuada elit et, gravida dolor. Aliquam
-        ipsum arcu, interdum ut venenatis at, vehicula in sapien. Proin vehicula
-        justo vel nisi venenatis vulputate. Suspendisse potenti. Maecenas
-        maximus nunc ut efficitur tempus. Phasellus nibh massa, ornare quis erat
-        at, faucibus volutpat quam.
-      </motion.p>
-
+        With a solid foundation in web development and a grasp of Machine
+        Learning using Python, my expertise lies in crafting dynamic
+        applications using various technologies.This includes proficiency in the
+        MERN stack for web applications, SwiftUI combined with Firebase for iOS
+        development, and experience in cross - platform development through
+        React Native.Additionally, I am well - versed in Next.js, a prominent
+        framework in modern web development.Keeping pace with the latest
+        technological trends, I am eager to contribute my skills to innovative
+        projects and serve as a valuable asset to any team.{" "}
+      </motion.p>{" "}
       <div className="mt-20 flex flex-wrap gap-10">
+        {" "}
         {services.map(({ title, icon }, index) => (
           <ServiceCard key={title} index={index} title={title} icon={icon} />
-        ))}
-      </div>
+        ))}{" "}
+      </div>{" "}
     </>
   );
 };
