@@ -19,7 +19,4 @@ The Website is live at :-
 https://saarthaktuli.netlify.app/
 
 ## Preview
-
-<a href="https://saarthaktuli.netlify.app/" target="_blank">
-<img src="https://github.com/SaarthakTuli/3D_Portfolio/assets/89101837/23bcf911-f35e-492c-9273-a46c1d31519c" alt="home page" />
-</a>
+![Home Page](https://github.com/SaarthakTuli/3D_Portfolio/assets/89101837/23bcf911-f35e-492c-9273-a46c1d31519c)
